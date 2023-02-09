@@ -97,7 +97,7 @@ Cergy, FRANCE | +33752494842 | rhihilayme@cy-tech.fr
 
 **CY tech (ex EISTI), FRANCE** - Computer Science Engineer Degree, Computer Science<span class="spacer"></span>2021 - Present
 
-**CY tech (ex EISTI), FRANCE** - Integrates Preparatory Classes, Computer Science<span class="spacer"></span>2019 - 2021
+**CY tech (ex EISTI), FRANCE** - Integrated Preparatory Classes, Computer Science<span class="spacer"></span>2019 - 2021
 
 **Pythagore High school, MOROCCO** - Baccalaureate Degree, Science Mathematics<span class="spacer"></span>2018 - 2019
 
