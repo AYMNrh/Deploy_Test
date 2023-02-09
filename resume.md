@@ -28,6 +28,15 @@ Cergy, FRANCE | +33752494842 | rhihilayme@cy-tech.fr
 
 <div className="vertical-spacer"></div>
 
+## Education
+
+**CY tech (ex EISTI), FRANCE** - Computer Science Engineer Degree, Computer Science<span class="spacer"></span>2021 - Present
+
+**CY tech (ex EISTI), FRANCE** - Integrated Preparatory Classes, Computer Science<span class="spacer"></span>2019 - 2021
+
+**Pythagore High school, MOROCCO** - Baccalaureate Degree, Science Mathematics<span class="spacer"></span>2018 - 2019
+
+
 ## Technical Skills
 **Scripting and analysis** | Python (Pandas, BeautifulSoup, Turtle...)
 
@@ -92,12 +101,4 @@ Cergy, FRANCE | +33752494842 | rhihilayme@cy-tech.fr
 
 
 
-<!-- Move this section above Technical Skills if you're a student/new grad -->
-## Education
-
-**CY tech (ex EISTI), FRANCE** - Computer Science Engineer Degree, Computer Science<span class="spacer"></span>2021 - Present
-
-**CY tech (ex EISTI), FRANCE** - Integrated Preparatory Classes, Computer Science<span class="spacer"></span>2019 - 2021
-
-**Pythagore High school, MOROCCO** - Baccalaureate Degree, Science Mathematics<span class="spacer"></span>2018 - 2019
 
