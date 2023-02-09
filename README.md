@@ -1,2 +1,2 @@
 # Deploy_Test
-this repo is used to deploy website tets
+this repo is used to deploy my website which shows my resume
