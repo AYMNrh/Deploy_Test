@@ -114,18 +114,18 @@ strong, em, a {
 }
 
 /* Media Queries */
-@media screen and (max-width: 768px) {
-    /* Adjust font sizes for mobile */
+@media screen and (max-width: 480px) {
+    /* Adjust font sizes for smaller screens */
     h1 {
         font-size: 24px;
     }
 
     h2 {
-        font-size: 14px;
+        font-size: 16px;
     }
 
     h3 {
-        font-size: 13px;
+        font-size: 14px;
     }
 
     p {
@@ -137,38 +137,14 @@ strong, em, a {
         padding-right: 16px;
     }
 
-    /* Adjust spacing for mobile */
+    /* Adjust spacing for smaller screens */
     .vertical-spacer {
         height: 4px;
     }
 
-    /* Adjust header info for mobile */
+    /* Adjust header info for smaller screens */
     .headerInfo > ul {
         margin-top: 4px !important;
         margin-bottom: 4px !important;
-    }
-
-    /* Increase line height for better readability on mobile */
-    h1, h2, h3, p {
-        line-height: 1.5;
-    }
-    
-    /* Adjust margins for better spacing on mobile */
-    h1 {
-        margin-bottom: 8px;
-    }
-
-    h2 {
-        margin-top: 8px;
-    }
-
-    h3 {
-        margin-top: 4px;
-        margin-bottom: 4px;
-    }
-
-    p {
-        margin-top: 2px;
-        margin-bottom: 2px;
     }
 }
