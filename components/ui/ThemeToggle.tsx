@@ -10,11 +10,11 @@ export function ThemeToggle() {
   const [isOpen, setIsOpen] = useState(false)
 
   const themes = [
+    { id: 'mint', name: 'Mint', colors: ['#00ADB5', '#222831'] },
     { id: 'default', name: 'Default', colors: ['#64ffda', '#0a192f'] },
     { id: 'purple', name: 'Purple', colors: ['#A64D79', '#1A1A1D'] },
     { id: 'violet', name: 'Violet', colors: ['#AD49E1', '#2E073F'] },
-    { id: 'rose', name: 'Rose', colors: ['#AE445A', '#432E54'] },
-    { id: 'mint', name: 'Mint', colors: ['#00ADB5', '#222831'] }
+    { id: 'rose', name: 'Rose', colors: ['#AE445A', '#432E54'] }
   ]
 
   return (
@@ -28,7 +28,7 @@ export function ThemeToggle() {
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
           onClick={() => setIsOpen(!isOpen)}
-          className="p-3 rounded-full bg-primary text-primary-foreground shadow-lg"
+          className="p-2 rounded-full bg-primary text-primary-foreground shadow-lg"
           title="Select theme"
         >
           <FaPalette className="w-5 h-5" />

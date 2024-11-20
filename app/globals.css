@@ -34,6 +34,7 @@
 
     --radius: 0.5rem;
     --theme-transition: all 0.3s ease;
+    --animation-opacity: 0;
   }
 
   .dark {
@@ -86,9 +87,10 @@
     background-image: url('/pics/animation_background.gif');
     background-size: cover;
     background-position: center;
-    opacity: 0.2;
+    opacity: var(--animation-opacity);
     pointer-events: none;
     z-index: -1;
+    transition: opacity 0.3s ease;
   }
 
   button {

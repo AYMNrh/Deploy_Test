@@ -45,7 +45,7 @@ const SkillsGrid = () => {
           initial="hidden"
           animate="visible"
           whileHover={{ scale: 1.05, transition: { duration: 0.2 } }}
-          className="bg-card text-card-foreground rounded-lg p-2 sm:p-3 text-center flex flex-col items-center justify-center"
+          className="bg-card text-card-foreground rounded-lg p-2 sm:p-2 text-center flex flex-col items-center justify-center"
         >
           <div className="text-2xl sm:text-3xl mb-1 text-primary">{skill.icon}</div>
           <p className="text-xs sm:text-sm font-medium">{skill.name}</p>

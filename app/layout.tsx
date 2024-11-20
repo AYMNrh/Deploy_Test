@@ -10,6 +10,8 @@ import Footer from "@/components/sections/Footer";
 import { Analytics } from "@vercel/analytics/react"
 import { ThemeToggle } from "@/components/ui/ThemeToggle"
 import { ScrollProgress } from "@/components/ui/ScrollProgress";
+import { AnimationProvider } from "@/app/AnimationProvider";
+import { AnimationToggle } from "@/components/ui/AnimationToggle";
 
 export const metadata = {
   title: "Aymen",
@@ -81,13 +83,16 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          <ScrollProgress />
-          <FloatingNav navItems={navItems} />
-          <StickyIcons />
-          {children}
-          <Footer />
-          <ThemeToggle />
-          <Analytics />
+          <AnimationProvider>
+            <ScrollProgress />
+            <FloatingNav navItems={navItems} />
+            <StickyIcons />
+            {children}
+            <Footer />
+            <ThemeToggle />
+            <AnimationToggle />
+            <Analytics />
+          </AnimationProvider>
         </ThemeProvider>
       </body>
     </html>

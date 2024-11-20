@@ -8,7 +8,7 @@ type ThemeContextType = {
 };
 
 export const ThemeContext = createContext<ThemeContextType>({
-  colorTheme: 'default',
+  colorTheme: 'mint',
   setColorTheme: () => {},
 });
 

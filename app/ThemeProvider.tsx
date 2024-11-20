@@ -6,7 +6,11 @@ import { type ThemeProviderProps } from "next-themes/dist/types"
 import { ThemeContext } from "@/lib/theme-context"
 
 export function ThemeProvider({ children, ...props }: ThemeProviderProps) {
-  const [colorTheme, setColorTheme] = React.useState<'default' | 'purple' | 'violet' | 'rose' | 'mint'>('default');
+  const [colorTheme, setColorTheme] = React.useState<'default' | 'purple' | 'violet' | 'rose' | 'mint'>('mint');
+
+  React.useEffect(() => {
+    setMintTheme();
+  }, []);
 
   const handleThemeChange = (theme: 'default' | 'purple' | 'violet' | 'rose' | 'mint') => {
     setColorTheme(theme);
