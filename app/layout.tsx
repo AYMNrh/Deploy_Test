@@ -8,6 +8,8 @@ import { FaHome, FaUser, FaBriefcase, FaCode } from "react-icons/fa";
 import StickyIcons from "@/components/sections/StickyIcons";
 import Footer from "@/components/sections/Footer";
 import { Analytics } from "@vercel/analytics/react"
+import { ThemeToggle } from "@/components/ui/ThemeToggle"
+import { ScrollProgress } from "@/components/ui/ScrollProgress";
 
 export const metadata = {
   title: "Aymen",
@@ -79,10 +81,12 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
+          <ScrollProgress />
           <FloatingNav navItems={navItems} />
           <StickyIcons />
           {children}
           <Footer />
+          <ThemeToggle />
           <Analytics />
         </ThemeProvider>
       </body>

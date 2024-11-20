@@ -2,21 +2,37 @@
 import React from 'react'
 import { motion } from 'framer-motion';
 import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card";
-import StyledPic from '../Styledpic';
-import { FaLightbulb, FaCode, FaPizzaSlice, FaHiking, FaPuzzlePiece, FaChalkboardTeacher } from 'react-icons/fa';
+import { FaLightbulb, FaCode, FaHiking, FaPuzzlePiece } from 'react-icons/fa';
 import { useScrollSection } from '@/hooks/use-scroll-section';
-import { CardSpotlight } from '../ui/card-spotlight';
 
 const AboutMe: React.FC = () => {
   const { ref, isVisible } = useScrollSection();
 
+  const slideInVariants = {
+    hidden: { 
+      x: -1000,
+      opacity: 0 
+    },
+    visible: { 
+      x: 0,
+      opacity: 1,
+      transition: {
+        type: "spring",
+        stiffness: 100,
+        damping: 15,
+        mass: 1,
+        duration: 0.8
+      }
+    }
+  };
+
   return (
-    <div id="about" className="relative w-full flex flex-col sm:flex-row py-20 scroll-mt-20" ref={ref}>
+    <div id="about" className="relative w-full flex justify-center items-center py-20 scroll-mt-20" ref={ref}>
       <motion.div
-        className="w-full sm:w-[70%] pr-0 sm:pr-8 mb-8 sm:mb-0"
-        initial={{ opacity: 0, x: -50 }}
-        animate={isVisible ? { opacity: 1, x: 0 } : {}}
-        transition={{ duration: 0.5 }}
+        className="w-full max-w-4xl px-4"
+        variants={slideInVariants}
+        initial="hidden"
+        animate={isVisible ? "visible" : "hidden"}
       >
         <Card className="w-full bg-card text-card-foreground">
           <CardHeader>
@@ -36,7 +52,6 @@ const AboutMe: React.FC = () => {
               When I&apos;m not immersed in code or refining machine learning models, you might find me:
             </p>
             <ul className="list-disc pl-5 space-y-2">
-              {/* <li><FaPizzaSlice className="inline-block mr-2" /> Perfecting my homemade pizza recipes</li> */}
               <li><FaHiking className="inline-block mr-2" /> Discovering new hiking trails around Île-de-France</li>
               <li><FaPuzzlePiece className="inline-block mr-2" /> Working on brain-teasing puzzles or logic games</li>
             </ul>
@@ -44,19 +59,8 @@ const AboutMe: React.FC = () => {
               At present, I&apos;m diving deeper into machine learning while exploring creative side projects like developing Python scripts for video synchronization and dabbling in web development. I believe in lifelong learning and constantly seek ways to blend my technical expertise with creativity. Whether it&apos;s optimizing fraud detection or crafting fun TikTok videos, I&apos;m all about making life a bit more innovative and engaging. Ready to see what&apos;s next? Let&apos;s create something amazing together!
             </p>
           </CardContent>
-
         </Card>
       </motion.div>
-      {/* <motion.div
-        className="w-full sm:w-[30%] flex justify-center items-center"
-        initial={{ opacity: 0, x: 50 }}
-        animate={isVisible ? { opacity: 1, x: 0 } : {}}
-        transition={{ duration: 0.5, delay: 0.2 }}
-      >
-        <div className='w-full max-w-[250px] aspect-square'>
-          <StyledPic />
-        </div>
-      </motion.div> */}
     </div>
   )
 }

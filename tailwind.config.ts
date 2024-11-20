@@ -32,15 +32,15 @@ const config = {
       },
       colors: {
         black: {
-          DEFAULT: "#000",
-          100: "#000319",
-          200: "rgba(17, 25, 40, 0.75)",
-          300: "rgba(255, 255, 255, 0.125)",
+          DEFAULT: "#1A1A1D",
+          100: "#3B1C32",
+          200: "#6A1E55",
+          300: "#A64D79",
         },
         white: {
           DEFAULT: "#FFF",
-          100: "#BEC1DD",
-          200: "#C1C2D3",
+          100: "#F5F5F5",
+          200: "#EBEBEB",
         },
         blue: {
           "100": "#E4ECFF",
@@ -53,11 +53,13 @@ const config = {
         foreground: "var(--foreground)",
         primary: {
           DEFAULT: "var(--primary)",
-          foreground: "var(--primary-foreground)",
+          dark: "#6A1E55",
+          light: "#A64D79",
         },
         secondary: {
           DEFAULT: "var(--secondary)",
-          foreground: "var(--secondary-foreground)",
+          dark: "#3B1C32",
+          light: "#6A1E55",
         },
         destructive: {
           DEFAULT: "var(--destructive)",
