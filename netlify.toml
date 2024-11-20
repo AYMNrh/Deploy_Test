@@ -2,5 +2,5 @@
   NODE_VERSION = "18.17.0"
 
 [build]
-  command = "npm run build"
-  publish = "out"
+  command = "npm install && npm run build"
+  functions = "functions"
