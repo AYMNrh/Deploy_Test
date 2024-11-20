@@ -30,7 +30,7 @@ const AboutMe: React.FC = () => {
             </p>
             <p>
               <FaCode className="inline-block mr-2" />
-              After completing my master's degree, during which I tackled challenges in data science, cloud computing, and deep learning, I dove headfirst into the professional world. My apprenticeship at BNP Paribas allowed me to dive into machine learning models for fraud detection. This experience showed me how programming, data, and AI are deeply interconnected, sparking a fascination with innovation in AI technologies.
+              After completing my master&apos;s degree, during which I tackled challenges in data science, cloud computing, and deep learning, I dove headfirst into the professional world. My apprenticeship at BNP Paribas allowed me to dive into machine learning models for fraud detection. This experience showed me how programming, data, and AI are deeply interconnected, sparking a fascination with innovation in AI technologies.
             </p>
             <p>
               When I&apos;m not immersed in code or refining machine learning models, you might find me:
