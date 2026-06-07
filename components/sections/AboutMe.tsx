@@ -42,7 +42,7 @@ const AboutMe: React.FC = () => {
           </CardHeader>
           <CardContent className="text-sm sm:text-base text-foreground space-y-4">
             <p>
-              👋 About section content goes here. Describe your background, skills, and what you're passionate about.
+              👋 About section content goes here. Describe your background, skills, and what you are passionate about.
             </p>
           </CardContent>
         </Card>
